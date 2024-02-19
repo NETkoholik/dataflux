@@ -1,0 +1,8 @@
+/* Add custom styles here to adjust colors, layouts, etc. */
+body {
+    background-color: #f3f3f3; /* Very light grey */
+  }
+  header {
+    background-color: #fff; /* White header */
+  }
+  
