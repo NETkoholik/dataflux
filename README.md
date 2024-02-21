@@ -1,10 +1,10 @@
-#Dataflux archives
+# Dataflux archives
 
-##Descripción
+## Descripción
 
 Parte de la serie dataflux, como dataflux becas y dataflux scoreboard, ahora un simple sistema académico que recoge PDF y lo almacena en un servidor de archivos. El sistema no está diseñado para accederse desde fuera de la red local.
 
-##Especificaciones
+## Especificaciones
 
 El sistema es un sistema web simple usando PHP como script de lado del servidor, consulta a una base de datos en un servidor web virtualizado y almacena los PDF cargados en el sistema a un servidor de archivos.
 
