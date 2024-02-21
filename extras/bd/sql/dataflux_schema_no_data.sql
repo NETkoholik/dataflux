@@ -47,6 +47,15 @@ CREATE TABLE IF NOT EXISTS `ta_tipos_firmas` (
 
 -- La exportación de datos fue deseleccionada.
 
+-- Volcando estructura para tabla dataflux.ta_tipos_usuarios
+CREATE TABLE IF NOT EXISTS `ta_tipos_usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tipo_usuario` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+-- La exportación de datos fue deseleccionada.
+
 -- Volcando estructura para tabla dataflux.tt_reso_firmantes
 CREATE TABLE IF NOT EXISTS `tt_reso_firmantes` (
   `resolucion_id` int(11) NOT NULL,
@@ -95,6 +104,21 @@ CREATE TABLE IF NOT EXISTS `t_resoluciones` (
   CONSTRAINT `resolutor_fk` FOREIGN KEY (`organo_resolutor`) REFERENCES `ta_organos_resolutores` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `tipo_firma_fk` FOREIGN KEY (`tipo_firma`) REFERENCES `ta_tipos_firmas` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+-- La exportación de datos fue deseleccionada.
+
+-- Volcando estructura para tabla dataflux.t_usuarios
+CREATE TABLE IF NOT EXISTS `t_usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `fecha_creacion` timestamp NOT NULL DEFAULT current_timestamp(),
+  `activo` tinyint(1) NOT NULL,
+  `rol` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_rol_tipos_usuarios` (`rol`),
+  CONSTRAINT `fk_rol_tipos_usuarios` FOREIGN KEY (`rol`) REFERENCES `ta_tipos_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
 
