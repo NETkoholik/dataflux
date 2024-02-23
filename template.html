@@ -4,35 +4,64 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dataflux archives</title>
-        <style>
-            body {
-                background-color: powderblue;
-                font-family: Helvetica, Arial, sans-serif;
-                font: 14px Helvetica, sans-serif;
-            }
-
-            div {
-                padding: 10px;
-            }
-            
-            .module1 {
-                background-color: #fefefe;
-                box-shadow: 1px 2px #AAA;
-                cursor: pointer;
-                border-radius: 8px;
-                /*Do not put border-style below border*/
-                border: 1px solid gray;
-/*                 border-style: solid; */
-                width: 150px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/template.css">
     </head>
     <body>
-        <div class="main">
-            <div class="module1">
-                <h3>M&oacute;dulo 1</h3>
-                <p style="font-size:10pt">Este es un p&aacute;rrafo contenido en un div modular con puntas redondeadas, de 150 px de ancho.</p>
-            </div>
+        <div class="topbar">
+            Inicio
         </div>
+        <section>
+            <div class="main">
+                <div class="module1">
+                    <div class="tabletitle">
+                        <h3>&Uacute;ltimas resoluciones</h3>
+                    </div>
+                    <div class="tbalereso">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Marcar</th>
+                                    <th>Resoluci&oacute;n</th>
+                                    <th>A&ntilde;o</th>
+                                    <th>T&iacute;tulo</th>
+                                    <th>&Oacute;rgano resolutor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>2023</td>
+                                    <td>Por la cual se aprueba en particular el protocolo de atención, prevención y seguimiento de hechos de discriminación, acoso laboral y acoso sexual producidos en el ámbito laboral y académico de la Universidad Nacional de Pilar - Protocolo Lila</td>
+                                    <td>Consejo Superior Universitario</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>497</td>
+                                    <td>2023</td>
+                                    <td>Por la cual se determina la realización de la evaluación de desempeño y potencial a funcionarios permanentes, contratados y comisionados dependientes del rectorado y se conforma la comisión para el efecto, en el Rectorado de la Universidad Nacional de Pilar</td>
+                                    <td>Rectorado</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>541</td>
+                                    <td>2023</td>
+                                    <td>Por la cual se dispone el cierre el periodo de cierre del Rectorado de la Universidad Nacional de Pilar</td>
+                                    <td>Vicerrectorado</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>31</td>
+                                    <td>2024</td>
+                                    <td>Por la cual se acepta el comisionamiento del señor Santiago Daniel Brizuela Almeida, funcionario del Tribunal Superior de Justicia Electoral a la Universidad Nacional de Pilar</td>
+                                    <td>Vicerrectorado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="height: 1000px;"></div>
     </body>
 </html>
