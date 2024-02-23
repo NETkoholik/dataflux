@@ -1,0 +1,60 @@
+div {
+    padding: 1px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+body {
+    margin: 0;
+}
+
+.grande1 {
+    display: block;
+    background-color: aliceblue;
+    border: 1px;
+    border-style: solid;
+    width: auto;
+}
+
+.grande-wrapper {
+    display: flex;
+    background-color: beige;
+    border: 1px;
+    border-style: solid;
+    width: 80%;
+}
+
+.grande-lateral {
+    display: block;
+    background-color: antiquewhite;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    width: 20%;
+}
+
+.titulo {
+    display: block;
+    background-color: rgba(0, 255, 255, 0.5);
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+}
+
+.elemento {
+    display: block;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+}
+
+.grande-contenido {
+    display: block;
+    background-color: azure;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    width: auto
+}
