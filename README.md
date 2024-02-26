@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Parte de la serie dataflux, como dataflux becas y dataflux scoreboard, ahora un simple sistema académico que recoge PDF y lo almacena en un servidor de archivos. El sistema no está diseñado para accederse desde fuera de la red local.
+Parte de la serie dataflux, como dataflux becas y dataflux scoreboard, ahora un simple sistema web que recoge PDF y lo almacena en un servidor de archivos. El sistema no está diseñado para accederse desde fuera de la red local.
 
 ## Especificaciones
 
